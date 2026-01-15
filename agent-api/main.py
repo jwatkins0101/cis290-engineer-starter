@@ -137,6 +137,6 @@ async def list_traces(limit: int = 10):
 async def startup():
     """Initialize connections on startup."""
     print("Starting Lead Qualification Agent API...")
-    print(f"OpenAI API Key configured: {'Yes' if os.getenv('OPENAI_API_KEY') else 'No'}")
+    print(f"Gemini API Key configured: {'Yes' if os.getenv('GEMINI_API_KEY') else 'No'}")
     print(f"Database URL configured: {'Yes' if os.getenv('DATABASE_URL') else 'No'}")
     print(f"Redis URL configured: {'Yes' if os.getenv('REDIS_URL') else 'No'}")

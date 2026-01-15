@@ -1,6 +1,6 @@
 # Engineer Track Sample: Lead Qualification Agent
 
-> **For coders** — Python FastAPI + OpenAI SDK + structured tool calling
+> **For coders** — Python FastAPI + Google Gemini API + structured tool calling
 
 ## Quick Start
 
@@ -8,15 +8,16 @@
 # 1. Copy environment template
 cp .env.example .env
 
-# 2. Add your API keys to .env
+# 2. Get your FREE Gemini API key at https://aistudio.google.com/apikey
+# 3. Add your API key to .env
 
-# 3. Start the stack
+# 4. Start the stack
 docker compose up
 
-# 4. Test the API
+# 5. Test the API
 curl http://localhost:8000/health
 
-# 5. View API docs
+# 6. View API docs
 open http://localhost:8000/docs
 ```
 

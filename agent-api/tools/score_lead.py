@@ -7,7 +7,7 @@ Students implement this in Week 3.
 
 from typing import Optional
 import json
-from openai import OpenAI
+import google.generativeai as genai
 from models import LeadInput, ScoreResult
 from config import settings, SCORING_WEIGHTS, REQUIRED_FIELDS
 
@@ -91,8 +91,9 @@ def score_lead(lead: LeadInput) -> ScoreResult:
 
     # TODO: Implement LLM scoring in Week 3
     # For now, return placeholder
-    # client = OpenAI(api_key=settings.OPENAI_API_KEY)
-    # response = client.chat.completions.create(...)
+    # genai.configure(api_key=settings.GEMINI_API_KEY)
+    # model = genai.GenerativeModel(settings.LLM_MODEL)
+    # response = model.generate_content(...)
 
     return _placeholder_score(lead)
 
