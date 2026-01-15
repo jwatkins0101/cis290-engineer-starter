@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "tier": "needs_info",
+    "missing_fields": ["need", "timeline"],
+    "approval_required": false,
+    "expected_action": "ask_clarifying_questions"
+  },
+  {
+    "id": 2,
+    "tier": "needs_info",
+    "missing_fields": ["timeline"],
+    "approval_required": false,
+    "expected_action": "ask_clarifying_questions"
+  },
+  {
+    "id": 3,
+    "tier": "needs_info",
+    "missing_fields": ["email"],
+    "approval_required": false,
+    "expected_action": "ask_clarifying_questions"
+  },
+  {
+    "id": 4,
+    "tier": "needs_info",
+    "missing_fields": ["company", "need", "timeline"],
+    "approval_required": false,
+    "expected_action": "ask_clarifying_questions"
+  },
+  {
+    "id": 5,
+    "tier": "reject",
+    "score_range": [0, 25],
+    "approval_required": true,
+    "expected_action": "request_approval"
+  },
+  {
+    "id": 6,
+    "tier": "reject",
+    "score_range": [0, 20],
+    "approval_required": true,
+    "expected_action": "flag_as_spam"
+  },
+  {
+    "id": 7,
+    "tier": "reject",
+    "score_range": [0, 35],
+    "approval_required": true,
+    "expected_action": "request_approval"
+  },
+  {
+    "id": 8,
+    "tier": "nurture",
+    "score_range": [40, 55],
+    "approval_required": false,
+    "expected_action": "create_nurture_task"
+  },
+  {
+    "id": 9,
+    "tier": "nurture",
+    "score_range": [45, 60],
+    "approval_required": false,
+    "expected_action": "create_nurture_task"
+  },
+  {
+    "id": 10,
+    "tier": "nurture",
+    "score_range": [40, 55],
+    "approval_required": false,
+    "expected_action": "create_nurture_task"
+  },
+  {
+    "id": 11,
+    "tier": "nurture",
+    "score_range": [50, 65],
+    "approval_required": false,
+    "expected_action": "create_nurture_task"
+  },
+  {
+    "id": 12,
+    "tier": "nurture",
+    "score_range": [55, 68],
+    "approval_required": false,
+    "expected_action": "create_nurture_task"
+  },
+  {
+    "id": 13,
+    "tier": "qualified",
+    "segment": "smb",
+    "score_range": [70, 82],
+    "approval_required": false,
+    "expected_action": "schedule_meeting"
+  },
+  {
+    "id": 14,
+    "tier": "qualified",
+    "segment": "smb",
+    "score_range": [75, 88],
+    "approval_required": false,
+    "expected_action": "schedule_meeting"
+  },
+  {
+    "id": 15,
+    "tier": "qualified",
+    "segment": "smb",
+    "score_range": [70, 80],
+    "approval_required": false,
+    "expected_action": "schedule_meeting"
+  },
+  {
+    "id": 16,
+    "tier": "qualified",
+    "segment": "smb",
+    "score_range": [78, 90],
+    "approval_required": false,
+    "expected_action": "schedule_meeting"
+  },
+  {
+    "id": 17,
+    "tier": "qualified",
+    "segment": "enterprise",
+    "score_range": [85, 95],
+    "approval_required": true,
+    "expected_action": "request_approval_then_schedule"
+  },
+  {
+    "id": 18,
+    "tier": "qualified",
+    "segment": "enterprise",
+    "score_range": [88, 98],
+    "approval_required": true,
+    "expected_action": "request_approval_then_schedule"
+  },
+  {
+    "id": 19,
+    "tier": "qualified",
+    "segment": "enterprise",
+    "score_range": [75, 88],
+    "approval_required": true,
+    "expected_action": "request_approval_then_schedule"
+  },
+  {
+    "id": 20,
+    "tier": "qualified",
+    "segment": "enterprise",
+    "score_range": [90, 100],
+    "approval_required": true,
+    "expected_action": "request_approval_then_schedule"
+  }
+]
